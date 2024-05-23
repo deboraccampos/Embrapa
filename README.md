@@ -13,10 +13,10 @@ Este é um simples script de API Flask do dataset da Embrapa que permite baixar 
 ## Configuração
 
 1. Clone o repositório:
-- git clone https://github.com/deboraccampos/Embrapa.git
+git clone https://github.com/deboraccampos/Embrapa.git
 
-2. Instale as dependências:
-- pip install -r requirements.txt
+3. Instale as dependências:
+pip install -r requirements.txt
 
 3. Configure suas credenciais da AWS:
 - Configure suas credenciais da AWS no seu ambiente local ou use outros métodos de autenticação suportados pelo `awswrangler`.
@@ -24,9 +24,9 @@ Este é um simples script de API Flask do dataset da Embrapa que permite baixar 
 ## Uso
 
 1. Inicie o servidor Flask:
-- python main.py
+python main.py
   
 2. Faça uma solicitação GET para o endpoint `/upload-file` com o nome do arquivo desejado como um parâmetro de consulta:
-- http://127.0.0.1:5000/upload-file?file_name=nome_do_seu_arquivo_csv
+http://127.0.0.1:5000/upload-file?file_name=nome_do_seu_arquivo_csv
 
 3. Verifique a resposta do servidor para ver se o arquivo foi baixado e salvo com sucesso no S3.
